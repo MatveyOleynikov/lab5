@@ -20,6 +20,17 @@ ostream& operator<<(ostream& o, const vector<T> & a)
     return o;
 }
 
+//вывод map
+template<typename X, typename Y>
+ostream& operator<<(ostream& o, const map<X, Y> & mp)
+{
+    for (auto i : mp){
+        o << i;
+    }
+    o << '\n';
+    return o;
+}
+
 int main(){
     
     return 0;
