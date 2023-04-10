@@ -2,13 +2,6 @@
 
 using namespace std;
 
-//вывод пары
-template<typename X, typename Y>
-ostream& operator<<(ostream& o, const pair<X, Y>& p)
-{
-    return o << "<" << p.first << ", " << p.second << ">" << "\n";
-}
-
 //вывод вектора
 template<typename T>
 ostream& operator<<(ostream& o, const vector<T> & a)
